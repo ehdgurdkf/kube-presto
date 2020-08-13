@@ -5,4 +5,4 @@ query.max-memory=1TB
 query.max-memory-per-node=16GB
 query.max-total-memory-per-node=18GB
 discovery-server.enabled=true
-discovery.uri=http://presto:8080
+discovery.uri=http://presto.warehouse:8080

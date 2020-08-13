@@ -32,7 +32,7 @@ spec:
     spec:
       containers:
       - name: presto-coordinator
-        image: uprush/prestosql-server:330
+        image: uprush/prestosql-server:340
         ports:
         - containerPort: 8080
         env:
@@ -85,7 +85,7 @@ metadata:
   name: presto-worker
   namespace: warehouse
 spec:
-  replicas: 5
+  replicas: 3
   selector:
     matchLabels:
       app: presto-worker
@@ -98,7 +98,7 @@ spec:
     spec:
       containers:
       - name: presto-worker
-        image: uprush/prestosql-server:330
+        image: uprush/prestosql-server:340
         env:
         - name: AWS_ACCESS_KEY_ID
           valueFrom:

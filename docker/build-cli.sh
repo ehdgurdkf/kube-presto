@@ -2,7 +2,7 @@
 
 set -e
 
-BUILD_VER=330
+BUILD_VER=340
 REPO_NAME=uprush
 
 # Build docker image.
